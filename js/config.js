@@ -26,12 +26,6 @@ jQuery(function() {
 		_window = jQuery(window),
 		_nav = jQuery('#nav');
 
-	// Forms
-		if (jQuery.browser.msie && jQuery.browser.version <= 9)
-			jQuery('form').n33_formerize();
-
-		jQuery('form .form-button-submit').click(function(e) { e.preventDefault(); jQuery(this).closest('form').submit(); });
-		jQuery('form .form-button-reset').click(function(e) { e.preventDefault(); jQuery(this).closest('form')[0].reset(); });
 	
 	// Links
 		jQuery('a').click(function(e) {
